@@ -1,0 +1,15 @@
+.profile__add-botton{
+    background-color: black;
+    border: 1px solid white;
+    width: 150px;
+    height: 50px;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .profile__add-botton{
+        margin: 36px 0 0;
+        width: 100%;
+    }
+}
