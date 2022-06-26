@@ -5,7 +5,9 @@
     height: 50px;
 }
 
-
+.profile__add-botton:hover {
+    opacity: .6;
+}
 
 @media screen and (max-width:600px) {
     .profile__add-botton{
