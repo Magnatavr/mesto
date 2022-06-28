@@ -1,4 +1,7 @@
 .profile__info-text{
     grid-column: 1;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
