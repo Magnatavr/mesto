@@ -9,7 +9,7 @@
 
 @media screen and (max-width:890px) {
     .element {
-        max-width: calc(100% - 3px); 
-        
+        max-width: calc(100% - 3px);
+
     }
 }

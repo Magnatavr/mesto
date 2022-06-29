@@ -9,10 +9,10 @@
 @media screen and (max-width:897px) {
     .elements {
         max-width: calc(100% - 38px);
-         margin: 36px auto 0;
-        grid-template-columns: repeat(auto-fit,288px);
+        margin: 36px auto 0;
+        grid-template-columns: repeat(auto-fit, 288px);
         gap: 20px 8px;
         justify-content: center;
     }
-   
+
 }
