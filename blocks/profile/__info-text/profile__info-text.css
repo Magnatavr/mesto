@@ -1,7 +1,27 @@
-.profile__info-text{
+.profile__info-text {
     grid-column: 1;
     margin: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px
+}
+
+@media screen and (max-width:690px) {
+    .profile__info-text {
+        width: 100%;
+        margin: 0 0 0 13px;
+        
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
 }

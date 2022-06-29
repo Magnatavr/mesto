@@ -1,5 +1,6 @@
 .header {
     width: 880px;
+    height: 32px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -12,7 +13,7 @@
     .header {
         max-width: 100%;
         margin: 28px auto 0;
-        padding-bottom: 31px;
+        padding-bottom: 27px;
        
     }
 
