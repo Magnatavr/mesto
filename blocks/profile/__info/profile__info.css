@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
     align-content: start;
-    column-gap: 18px;
+    column-gap: 14px;
 }
 
 @media screen and (max-width:600px) {

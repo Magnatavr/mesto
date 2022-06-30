@@ -9,17 +9,13 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    max-width: 336px;
 }
 
 @media screen and (max-width:690px) {
     .profile__info-text {
         width: 100%;
         margin: 0 0 0 13px;
-
-
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         text-align: center;
