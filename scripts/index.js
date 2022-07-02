@@ -50,4 +50,4 @@ function addProfileInfo(evt) {
 formElement.addEventListener('submit', addProfileInfo);
 popupOpenButtonElement.addEventListener('click', addPopupVisibility);
 popupCloseButtonElement.addEventListener('click', closePopupVisibility);
-popupElement.addEventListener('click', closePopupByClickOnOverlay);
+// popupElement.addEventListener('click', closePopupByClickOnOverlay);
