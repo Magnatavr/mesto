@@ -9,12 +9,12 @@
     border: none;
     background-color: transparent;
     transition: .2s;
-    position: absolute; 
+    position: absolute;
     top: 18px;
     right: 15px;
     outline: none;
 }
- 
+
 .element__remove-button:hover {
     opacity: .6;
     cursor: pointer;
