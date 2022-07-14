@@ -1,0 +1,11 @@
+.popup-view__description {
+    max-width: 291px;
+    height: 12px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    align-self: flex-start;
+}

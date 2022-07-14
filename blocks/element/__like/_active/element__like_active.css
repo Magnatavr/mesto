@@ -1,0 +1,7 @@
+.element__like_active {
+    opacity: 1;
+    background: url(../../../../images/black-like.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}

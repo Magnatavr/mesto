@@ -25,48 +25,16 @@
             <button type="button" class="profile__add-botton"></button>
         </section>
         <section class="elements">
-            <article class="element">
-                <img class="element__img" src="./images/karachay.jpg" alt="Карачаевск">
-                <div class="element__info">
-                    <h2 class="element__title">Карачаевск</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img class="element__img" src="./images/elbrus.jpg" alt="Гора Эльбрус">
-                <div class="element__info">
-                    <h2 class="element__title">Гора Эльбрус</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img class="element__img" src="./images/dombay.jpg" alt="Домбай">
-                <div class="element__info">
-                    <h2 class="element__title">Домбай</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img class="element__img" src="./images/elbrus2.jpg" alt="Гора Эльбрус">
-                <div class="element__info">
-                    <h2 class="element__title">Гора Эльбрус</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img class="element__img" src="./images/dombay2.jpg" alt="Домбай">
-                <div class="element__info">
-                    <h2 class="element__title">Домбай</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img class="element__img" src="./images/karachay.jpg" alt="карачаево черкесия">
-                <div class="element__info">
-                    <h2 class="element__title">Карачаево-черкесия</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-            </article>
+            <template class="card-template">
+                <article class="element">
+                    <img class="element__img" src="" alt="">
+                    <div class="element__info">
+                        <h2 class="element__title"></h2>
+                        <button type="button" class="element__like"></button>
+                    </div>
+                    <button type='button' class="element__remove-button"></button>
+                </article>
+            </template>
         </section>
     </main>
 
@@ -87,6 +55,29 @@
                 </form>
             </div>
         </div>
+    </div>
+    <div class="popup popup-add-form">
+        <div class="popup__container">
+            <button type="button" class="popup__close-button popup-add-form__close-button"></button>
+            <div class="popup__content">
+                <form action="№" name="popupForm" class="popup__form" novalidate>
+                    <h2 class="popup__title">Новое место</h2>
+                    <input name="placeName" type="text" placeholder="название" class="popup__input" id="placeName-input"
+                        required>
+                    <input name="imageUrl" type="text" placeholder="Ссылка на картинку" class="popup__input"
+                        id="placeUrl-input" required>
+                    <button type="submit" class="popup__button">Создать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-view">
+        <div class="popup-view__container">
+            <button type="button" class="popup__close-button popup-view__close-button"></button>
+            <img class="popup-view__image" src="" alt="">
+            <p class="popup-view__description"></p>
+        </div>
+
     </div>
     <script src="./scripts/index.js"></script>
 </body>
