@@ -24,7 +24,7 @@ const initialCards = [{
     }
 ];
 //  отметил попап   
-const popupEditProfile = document.querySelector('.popup');
+const popupEditProfile = document.querySelector('.popup-edit-profile');
 const popupAddCard = document.querySelector('.popup-add-form');
 const popupView = document.querySelector('.popup-view');
 // кнопка закрыть попап
@@ -43,7 +43,7 @@ function closePopupVisibility(popup) {
 
 
 }
-// кнопка сердечка
+
 
 // add-button
 const profileAddBotton = document.querySelector('.profile__add-botton');
@@ -51,24 +51,12 @@ const profileAddBotton = document.querySelector('.profile__add-botton');
 const cardTemplate = document.querySelector('.card-template').content;
 const cardSection = document.querySelector('.elements')
 initialCards.reverse().forEach(element => {
-    const cardElement = cardTemplate.querySelector('.element').cloneNode(true)
-    const buttonLike = cardElement.querySelector('.element__like');
-    const cardImg = cardElement.querySelector('.element__img');
+    const cardFields = {
+        'cardName': element['name'],
+        'cardUrl': element['link']
+    };
+    addCard(cardFields);
 
-    buttonLike.addEventListener('click', () => {
-        buttonLike.classList.toggle('element__like_active')
-    })
-    cardElement.querySelector('.element__title').textContent = element['name']
-    cardImg.src = element['link']
-    cardElement.querySelector('.element__remove-button').addEventListener('click', () => {
-        cardElement.remove()
-    })
-    cardImg.addEventListener('click', () => {
-        popupView.classList.add('popup_is-opened');
-        popupView.querySelector('.popup-view__image').src = element['link'];
-        popupView.querySelector('.popup-view__description').textContent = element['name'];
-    })
-    cardSection.append(cardElement);
 });
 
 // форма
@@ -136,7 +124,7 @@ function addCard(fields) {
 formEditProfile.addEventListener('submit', addProfileInfo);
 formAddCard.addEventListener('submit', (evt) => {
     evt.preventDefault()
-    let inputFields = {
+    const inputFields = {
         'cardName': formAddCard.querySelector('#placeName-input').value,
         'cardUrl': formAddCard.querySelector('#placeUrl-input').value
     };
@@ -155,11 +143,20 @@ profileAddBotton.addEventListener('click', () => {
 });
 
 popupEditProfile.addEventListener('mousedown', (evt) => {
-    closePopupByClickOnOverlay(evt, popupEditProfile);
+    if (!evt.button) {
+        closePopupByClickOnOverlay(evt, popupEditProfile);
+    }
+
 });
 popupView.addEventListener('mousedown', (evt) => {
-    closePopupByClickOnOverlay(evt, popupView);
+    if (!evt.button) {
+        closePopupByClickOnOverlay(evt, popupView);
+    }
+
 });
 popupAddCard.addEventListener('mousedown', (evt) => {
-    closePopupByClickOnOverlay(evt, popupAddCard);
+    if (!evt.button) {
+        closePopupByClickOnOverlay(evt, popupAddCard);
+    }
+
 });
